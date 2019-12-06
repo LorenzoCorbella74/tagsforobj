@@ -1,10 +1,10 @@
-# TAGS for JS Object
+# TAGS for JS Objects
 
 ![](https://img.shields.io/badge/type-JS_Library-brightgreen.svg "Project type")
 ![](https://img.shields.io/github/repo-size/LorenzoCorbella74/tagsforobj "Repository size")
 ![](https://img.shields.io/github/package-json/v/LorenzoCorbella74/tagsforobj)
 
-A micro library to study ES6 (ES2015) SET Object type, able to add tags to JS Object.
+A micro library to study ES6 (ES2015) SET Object type, able to add tags to JS Objects.
 
 
 ## Documentation
@@ -54,7 +54,7 @@ ES6 Javascript, [microbundle](https://github.com/developit/microbundle),
 
 ## Versioning
 
-Versione 0.0.4
+Versione 0.0.5
 
 ## License
 

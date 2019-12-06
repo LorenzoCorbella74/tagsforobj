@@ -1,6 +1,6 @@
 {
   "name": "tagsforobj",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "add tags to object!",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
