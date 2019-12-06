@@ -15,19 +15,12 @@ let testObj = { name: "MAXPAYNE" };
 
 testObj = tagsEnabler(testObj);
 
-let test = new Second('TEST');
-console.log(test)
-test = tagsEnabler(test)
-console.log(test)
-test.addTag('prova')
-console.log(test.queryTag('prova'), test.getTags());
-
-console.log("---------------- test obj 1 -------------------");
 console.log(testObj); // {name: "MAXPAYNE" } prototype is not visible
 
 // ADD
 testObj.addTag("man");
 testObj.addTag("football player");
+
 // HAS
 console.log(testObj.queryTag("man")); // true
 
@@ -50,7 +43,7 @@ console.log(testObj.sizeTags()); // 4
 
 // DELETE MULTIPLE
 testObj.deleteTag(["guitar player", "dad", "random"]); // true
-console.log(testObj.queryTag("dad")); // false
+console.log(testObj.queryTag("dad"));                   // false
 
 // HAS MULTIPLE
 console.log("--------------- has multiple ------------------");
