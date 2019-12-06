@@ -9,6 +9,8 @@ A micro library to study ES6 (ES2015) SET Object type, able to add tags to JS Ob
 
 ## Documentation
 ```javascript
+import {tagsEnabler} from 'tagsforobj';
+
 let testObj = { name: "MAXPAYNE" };
 
 testObj = tagsEnabler(testObj);
