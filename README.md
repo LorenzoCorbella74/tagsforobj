@@ -54,7 +54,7 @@ ES6 Javascript, [microbundle](https://github.com/developit/microbundle),
 
 ## Versioning
 
-Versione 0.0.3
+Versione 0.0.4
 
 ## License
 
