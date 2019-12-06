@@ -15,43 +15,30 @@ let testObj = { name: "MAXPAYNE" };
 
 testObj = tagsEnabler(testObj);
 
-console.log(testObj); // {name: "MAXPAYNE" } prototype is not visible
+console.log(testObj); // {name: "MAXPAYNE" } tags are in the prototype...
 
 // ADD
-testObj.addTag("man");
-testObj.addTag("football player");
-
-// HAS
-console.log(testObj.queryTag("man")); // true
+testObj.addTag("man");  // string
+testObj.addTag("football player"); // tags can have whitespaces
+testObj.addTag(["dad", "guitar player", "developer", "engineer"]);  // array of strings
 
 // DELETE
 testObj.deleteTag("man");
 console.log(testObj.queryTag("man")); // false
+testObj.deleteTag(["guitar player", "dad", "random"]);
+console.log(testObj.queryTag("dad"));     // false
 
-// SIZE
-testObj.addTag("dad");
-testObj.addTag("guitar player");
-console.log(testObj.sizeTags()); // 3
-
-// CLEAR
-testObj.clearTags();
-console.log(testObj.sizeTags()); // 0
-
-// ADD MULTIPLE
-testObj.addTag(["dad", "guitar player", "developer", "engineer"]);
-console.log(testObj.sizeTags()); // 4
-
-// DELETE MULTIPLE
-testObj.deleteTag(["guitar player", "dad", "random"]); // true
-console.log(testObj.queryTag("dad"));                   // false
-
-// HAS MULTIPLE
-console.log("--------------- has multiple ------------------");
+// HAS
+console.log(testObj.queryTag("man")); 
 console.log(testObj.queryTag(["developer", "engineer"])); // AND CONDITION is the DEFAULT
 console.log(testObj.queryTag(["developer", "dad"]));
 console.log(testObj.queryTag(["dad", "developer"], "OR")); // OR CONDITION
-console.log(testObj.queryTag("!dad")); // IF DIFFERENT with !
+console.log(testObj.queryTag("!dad")); // ! to invert the condition
 console.log(testObj.queryTag(["developer", "!dad", "engineer"]));
+
+// CLEAR / SIZE
+testObj.clearTags();
+console.log(testObj.sizeTags()); // 0
 ```
 
 ### Todo
